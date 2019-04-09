@@ -1,0 +1,35 @@
+.calender-container {
+  display: flex;
+}
+.to-calender {
+  margin-left: 20px;
+}
+.calender-month-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.calender-dates-days-table td {
+  padding: 10px;
+  cursor: pointer;
+}
+.calender-date-selected {
+  background-color: skyblue;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

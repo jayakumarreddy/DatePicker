@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import DateRangePicker from "./DatePicker/DateRangePicker";
+import DatePicker from "./DatePicker";
 
-class App extends Component {
+class DateRangePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,11 +17,14 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="datepicker-component">
-        <DateRangePicker />
-      </div>
+      <DatePicker
+        setFromDate={this.setFromDate}
+        setToDate={this.setToDate}
+        fromDate={this.state.fromDate}
+        toDate={this.state.toDate}
+      />
     );
   }
 }
 
-export default App;
+export default DateRangePicker;
